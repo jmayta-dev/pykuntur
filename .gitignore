@@ -1,0 +1,25 @@
+# Default
+*.egg-info
+*.pot
+*.py[co]
+.tox/
+MANIFEST
+dist/
+docs/_build/
+docs/locale/
+node_modules/
+tests/coverage_html/
+tests/.coverage
+build/
+tests/report/
+
+# Folders
+**/__pycache__/
+.vscode/
+.idea/
+assets/
+upload/
+
+# Files
+.env
+config/settings/local.py
