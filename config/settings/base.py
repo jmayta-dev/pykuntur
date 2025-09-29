@@ -5,6 +5,8 @@ import os
 import sys
 from pathlib import Path
 
+from utils import get_env
+
 
 ALLOWED_HOSTS = []
 
@@ -64,7 +66,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = get_env('SECRET_KEY')
 
 STATIC_FILE_DIRS = [os.path.join(BASE_DIR, 'static')]
 
