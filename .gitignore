@@ -28,3 +28,6 @@ upload/
 **/*.sqlite[3]
 .env
 config/settings/local.py
+
+# Virtual environments
+.venv/
