@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pykuntur.pages.apps.PagesConfig'
 ]
 
 LANGUAGE_CODE = 'en-us'
