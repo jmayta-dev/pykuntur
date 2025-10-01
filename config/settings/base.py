@@ -71,8 +71,6 @@ SECRET_KEY = get_env('SECRET_KEY')
 
 STATIC_FILE_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-
 STATIC_URL = 'static/'
 
 TEMPLATES = [
