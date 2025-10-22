@@ -1,11 +1,8 @@
-"""
-Django settings for pykuntur project.
-"""
+"""Django settings for pykuntur project."""
+
 import os
 import sys
 from pathlib import Path
-
-from utils import get_env
 
 
 ALLOWED_HOSTS = []
@@ -48,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pykuntur.pages.apps.PagesConfig'
 ]
 
 LANGUAGE_CODE = 'en-us'
@@ -67,9 +63,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 
-SECRET_KEY = get_env('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
-STATIC_FILE_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 STATIC_URL = 'static/'
 

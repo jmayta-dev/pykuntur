@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}" />
+    {% block styles %}{% endblock styles %}
+    <title>{% block title %}{% endblock title %}</title>
+    <!-- alpinejs -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {% block scripts_top %}{% endblock scripts_top %}
+</head>
+<body>
+    {% block header %}{% endblock header %}
+    {% block page_content %}{% endblock page_content %}
+    {% block footer %}{% endblock footer %}
+    {% block scripts_bottom %}{% endblock scripts_bottom %}
+</body>
+</html>
