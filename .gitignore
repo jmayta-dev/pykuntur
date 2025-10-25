@@ -31,3 +31,7 @@ config/settings/local.py
 
 # Virtual environments
 .venv/
+
+# django
+mediafiles/
+staticfiles/
