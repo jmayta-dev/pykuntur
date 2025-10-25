@@ -4,6 +4,8 @@ import os
 import sys
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 
 ALLOWED_HOSTS = []
 
@@ -26,6 +28,8 @@ AUTH_PASSWORD_VALIDATORS = [
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # <project_root>
 sys.path.append(os.path.join(BASE_DIR, 'pykuntur'))
+
+load_dotenv(dotenv_path=os.path.join(BASE_DIR, ".env"), override=True)
 
 DATABASES = {
     'default': {
@@ -66,7 +70,7 @@ ROOT_URLCONF = 'config.urls'
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 
 STATIC_URL = 'static/'
 
