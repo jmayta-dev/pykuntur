@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pykuntur.resume.apps.ResumeConfig',
 ]
 
 LANGUAGE_CODE = 'en-us'
