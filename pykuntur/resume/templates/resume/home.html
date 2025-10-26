@@ -42,20 +42,39 @@
             </a>
         </div>
     </section>
-    <!-- about -->
-    <div id="about-me" class="h-[1px] w-full"></div>
-    <section class="mt-32">
-        <h2 class="font-catamaran font-bold text-3xl mb-10">Sobre mí</h2>
-        <article class="text-lg/tight text-neutral-600">
-            <p class="my-3">Desarrollador de software especializado en arquitecturas modernas y optimización de
-                sistemas. El enfoque orientado a acción y resultados en los cargos que he desempeñado me ha permitido
-                desarrollar una gran capacidad de resolución y adaptabilidad, de esta forma, poder ofrecer soluciones
-                ajustadas a las necesidades y objetivos estratégicos de cualquier organización.</p>
-            <p class="my-3">Me apasiona el mundo de la tecnología y la programación, constantemente me encuentro
-                buscando nuevas formas de mejorar y optimizar los procesos empresariales a través de la innovación
-                tecnológica y la transformación digital.</p>
-        </article>
-    </section>
-    <!-- /about -->
 </main>
 {% endblock hero %}
+
+{% block content %}
+<!-- about -->
+<div id="about-me" class="h-[1px] w-full"></div>
+<section class="mt-32 px-6 md:px-0 max-w-4xl mx-auto">
+    <h2 class="font-catamaran font-bold text-3xl mb-10">Sobre mí</h2>
+    <article class="text-lg/tight text-neutral-600">
+        <p class="my-3">Desarrollador de software especializado en arquitecturas modernas y optimización de
+            sistemas. El enfoque orientado a acción y resultados en los cargos que he desempeñado me ha permitido
+            desarrollar una gran capacidad de resolución y adaptabilidad, de esta forma, poder ofrecer soluciones
+            ajustadas a las necesidades y objetivos estratégicos de cualquier organización.</p>
+        <p class="my-3">Me apasiona el mundo de la tecnología y la programación, constantemente me encuentro
+            buscando nuevas formas de mejorar y optimizar los procesos empresariales a través de la innovación
+            tecnológica y la transformación digital.</p>
+    </article>  
+</section>
+<!-- /about -->
+{% endblock content %}
+
+{% block footer %}
+<!-- footer -->
+<footer class="bg-neutral-700 text-white mt-20">
+    <section class="pt-12">
+        <ul class="flex flex-row justify-center gap-6 md:gap-10">
+            <li><a target="_blank" href="https://github.com/jmayta-dev" class="px-2 py-1 border-b border-b-neutral-700 hover:border-b-white hover:font-semibold">GitHub</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/jmayta/" class="px-2 py-1 border-b border-b-neutral-700 hover:border-b-white hover:font-semibold">LinkedIn</a></li>
+        </ul>
+    </section>
+    <div class="max-w-5xl mx-auto py-12 px-4">
+        <p class="text-center text-base">© 2025 Jheison Mayta. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- /footer -->
+{% endblock footer %}

@@ -28,7 +28,7 @@ AUTH_PASSWORD_VALIDATORS = [
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # <project_root>
 sys.path.append(os.path.join(BASE_DIR, 'pykuntur'))
-
+# load .env file
 load_dotenv(dotenv_path=os.path.join(BASE_DIR, ".env"), override=True)
 
 DATABASES = {
