@@ -3,6 +3,8 @@
 from .base import *
 
 
+ALLOWED_HOSTS += ["localhost","jmayta.pythonanywhere.com",]
+
 DEBUG = False
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")

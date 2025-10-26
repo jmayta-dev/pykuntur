@@ -10,22 +10,52 @@
 {% block title %}Jheison Mayta | Backend Developer{% endblock title %}
 
 {% block hero %}
-<main x-data="main" class="min-w-xs max-w-md w-full m-auto text-gray-800">
-    <section id="hero" class="relative flex flex-col items-center mt-12 p-2.5 px-6">
-        <img class="rounded-full w-40 my-8 md:w-48" src="{% static 'images/profile.webp' %}" alt="jheison's profile image">
+<main class="min-w-xs max-w-md w-full m-auto px-6 text-gray-800">
+    <section id="hero" class="relative flex flex-col items-center mt-12 py-2.5">
+        <img class="rounded-full w-40 my-8 md:w-48" src="{% static 'images/profile.webp' %}"
+            alt="jheison's profile image">
         <h1 class="font-catamaran font-black text-center text-4xl md:text-5xl">Jheison Mayta</h1>
-        <p class="my-3 text-center text-lg/snug text-gray-700 md:text-xl/[1.2]">Desarrollador de software con experiencia en arquitecturas modernas y optimización de sistemas</p>
+        <p class="text-center font-semibold text-xl text-neutral-500 md:text-xl/[1.2]">Desarrollador Backend</p>
         <div class="m-4">
             <ul class="flex flex-row gap-3 text-xl md:text-lg">
-                <li><a target="_blank" href="https://github.com/jmayta-dev" class="inline-flex size-9 rounded-lg justify-center items-center text-gray-600 bg-gray-100 shadow-md/15 hover:shadow-lg/30 hover:bg-gray-300 transition-all duration-200 ease-in-out md:h-9 md:w-28 md:justify-evenly"><i class="fa-brands fa-github"></i><span class="hidden md:inline">GitHub</span></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/jmayta/" class="inline-flex size-9 rounded-lg justify-center items-center text-gray-600 bg-gray-100 shadow-md/15 hover:shadow-lg/30 hover:bg-gray-300 transition-all duration-200 ease-in-out md:h-9 md:w-28 md:justify-evenly"><i class="fa-brands fa-linkedin"></i><span class="hidden md:inline">LinkedIn</span></a></li>
-                <li><a href="mailto:jmayta.dev@gmail.com" class="inline-flex size-9 rounded-lg justify-center items-center text-gray-600 bg-gray-100 shadow-md/15 hover:shadow-lg/30 hover:bg-gray-300 transition-all duration-200 ease-in-out md:h-9 md:w-28 md:justify-evenly"><i class="fa-solid fa-envelope"></i><span class="hidden md:inline">Email</span></a></li>
+                <li><a target="_blank" href="https://github.com/jmayta-dev"
+                        class="inline-flex size-9 rounded-lg justify-center items-center text-gray-600 bg-gray-100 shadow-md/15 hover:shadow-lg/30 hover:bg-gray-300 transition-all duration-200 ease-in-out md:h-9 md:w-28 md:justify-evenly"><i
+                            class="fa-brands fa-github"></i><span class="hidden md:inline">GitHub</span></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/jmayta/"
+                        class="inline-flex size-9 rounded-lg justify-center items-center text-gray-600 bg-gray-100 shadow-md/15 hover:shadow-lg/30 hover:bg-gray-300 transition-all duration-200 ease-in-out md:h-9 md:w-28 md:justify-evenly"><i
+                            class="fa-brands fa-linkedin"></i><span class="hidden md:inline">LinkedIn</span></a></li>
+                <li>
+                    <a href="mailto:jmayta.dev@gmail.com"
+                        class="inline-flex size-9 rounded-lg justify-center items-center text-gray-600 bg-gray-100 shadow-md/15 hover:shadow-lg/30 hover:bg-gray-300 transition-all duration-200 ease-in-out md:h-9 md:w-28 md:justify-evenly">
+                        <i class="fa-solid fa-envelope"></i><span class="hidden md:inline">Email</span>
+                    </a>
+                </li>
             </ul>
         </div>
+        <p class="my-3 text-center text-lg/snug text-gray-700 md:text-xl/[1.2]">Desarrollador de software con
+            experiencia en arquitecturas modernas y optimización de sistemas</p>
         <div class="h-[1px] w-full"></div>
         <div class="mt-7">
-            <a target="_blank" href="https://drive.google.com/file/d/1P63kGfTwxrhSFm6S6E5PRK26sVMYamDF/view?usp=sharing" class="bg-blue-500 rounded-xl px-4 py-2.5 text-white mb-16 text-sm font-bold shadow-md/20 hover:shadow-xl/30 hover:bg-blue-400 transition-all duration-150 ease-in-out">Descargar CV</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1P63kGfTwxrhSFm6S6E5PRK26sVMYamDF/view?usp=sharing"
+                class="bg-blue-500 rounded-xl px-4 py-2.5 text-white text-sm font-bold shadow-md/20 hover:shadow-xl/30 hover:bg-blue-400 transition-all duration-150 ease-in-out" download>
+                Descargar CV
+            </a>
         </div>
     </section>
+    <!-- about -->
+    <div id="about-me" class="h-[1px] w-full"></div>
+    <section class="mt-32">
+        <h2 class="font-catamaran font-bold text-3xl mb-10">Sobre mí</h2>
+        <article class="text-lg/tight text-neutral-600">
+            <p class="my-3">Desarrollador de software especializado en arquitecturas modernas y optimización de
+                sistemas. El enfoque orientado a acción y resultados en los cargos que he desempeñado me ha permitido
+                desarrollar una gran capacidad de resolución y adaptabilidad, de esta forma, poder ofrecer soluciones
+                ajustadas a las necesidades y objetivos estratégicos de cualquier organización.</p>
+            <p class="my-3">Me apasiona el mundo de la tecnología y la programación, constantemente me encuentro
+                buscando nuevas formas de mejorar y optimizar los procesos empresariales a través de la innovación
+                tecnológica y la transformación digital.</p>
+        </article>
+    </section>
+    <!-- /about -->
 </main>
 {% endblock hero %}
